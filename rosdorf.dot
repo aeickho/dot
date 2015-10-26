@@ -1,0 +1,257 @@
+digraph G {
+  rankdir=LR
+  shape=no fontsize=10 fontname="Verdana"
+#splines=ortho 
+#overlap=prism0
+ graph [overlap = false];
+ node [shape=plaintext]
+
+
+subgraph cluster_9 {
+	shape=ellipse
+	style=filled
+	color="lightgray"
+	label="Kindergarten/Sporthalle"
+	subgraph cluster_0 {
+		label="Kindergarten-Büro";
+		shape=ellipse
+		style=filled
+		color="gray"
+
+		vdsl_kindergarten [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD CELLSPACING="2">VDSL-Kindergarten</TD><TD ROWSPAN="2" BALIGN="LEFT">?<BR/>16MBit/s</TD></TR> 
+			<TR><TD><IMG SRC="fritzbox.jpg"/></TD></TR>
+			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>DSL:</TD><TD>Telekom</TD></TR>
+			<TR><TD>LAN1:</TD><TD   BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			</TABLE>>
+		]
+
+		hope_rosdorf_01 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>hope-rosdorf-01</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
+			<TR><TD><IMG SRC="1043.jpg"/></TD></TR>
+			<TR><TD>Mac:  </TD><TD>c4:6e:1f:97:71:80</TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN" >WAN        </TD></TR>
+			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2">Client</TD></TR>
+			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3">Client</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4">Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2"  >IBSS/Client K1 </TD></TR>
+			</TABLE>>
+		]
+	}
+
+	subgraph cluster_1 {
+	        label="Fallrohr Sporthalle";
+	        shape=ellipse
+		style=filled
+		color="gray"
+
+		nano_loco_rosdorf_01 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>Nano_Loco_Rosdorf_01 10.109.250.25</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD><IMG SRC="nano.jpg"/></TD></TR>
+			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
+			</TABLE>>
+		]
+	}
+}
+
+subgraph cluster_99 {
+	shape=ellipse
+	style=filled
+	color="lightgray"
+	label="Haus C"
+	subgraph cluster_999 {
+		label="Switch-Schrank";
+		shape=ellipse
+		style=filled
+		color="gray"
+	
+		switch_1 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
+			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
+			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
+			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
+			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: wedwd</TD></TR>
+			<TR><TD>LAN4:</TD><TD  PORT="LAN4"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN5:</TD><TD  PORT="LAN5"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN6:</TD><TD  PORT="LAN6"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN7:</TD><TD  PORT="LAN7"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN8:</TD><TD  PORT="LAN8"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN9:</TD><TD  PORT="LAN9"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN10:</TD><TD PORT="LAN10" ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN11:</TD><TD PORT="LAN11" ALIGN="LEFT">VLAN: dwede</TD></TR>
+			</TABLE>>
+		]
+	}
+
+	subgraph cluster_2 {
+        	label="Wo steht der?";
+	        shape=ellipse style=filled
+		color="gray"
+		hope_rosdorf_02 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>hope-rosdorf-01</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
+			<TR><TD><IMG SRC="1043.jpg"/></TD></TR>
+			<TR><TD>Mac:  </TD><TD></TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN" >WAN        </TD></TR>
+			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2">Client</TD></TR>
+			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3">Client</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4">Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2"  >IBSS/Client K1 </TD></TR>
+			</TABLE>>
+			]
+	}
+}
+
+subgraph cluster_999 {
+	shape=ellipse
+	style=filled
+	color="lightgray"
+	label="Verwaltung"
+	subgraph cluster_999 {
+		label="Keller-Schrank";
+		shape=ellipse
+		style=filled
+		color="gray"
+	
+		switch_2 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
+			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
+			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
+			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
+			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: wedwd</TD></TR>
+			<TR><TD>LAN4:</TD><TD  PORT="LAN4"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN5:</TD><TD  PORT="LAN5"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN6:</TD><TD  PORT="LAN6"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN7:</TD><TD  PORT="LAN7"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN8:</TD><TD  PORT="LAN8"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN9:</TD><TD  PORT="LAN9"  ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN10:</TD><TD PORT="LAN10" ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN11:</TD><TD PORT="LAN11" ALIGN="LEFT">VLAN: dwede</TD></TR>
+			</TABLE>>
+		]
+
+		hope_rosdorf_05 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>hope-rosdorf-05</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
+			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD>Mac:  </TD><TD></TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
+			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
+			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
+			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2">IBSS/Client K1 </TD></TR>
+			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >IBSS/Mesh/Client K44</TD></TR>
+
+			</TABLE>>
+			]
+		}
+
+	subgraph cluster_9999 {
+		label="Etage 1";
+		shape=ellipse
+		style=filled
+		color="gray"
+	
+
+		hope_rosdorf_04 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>hope-rosdorf-04</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
+			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD>Mac:  </TD><TD></TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
+			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
+			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
+			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2">IBSS/Client K1 </TD></TR>
+			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >IBSS/Mesh/Client K44</TD></TR>
+
+			</TABLE>>
+			]
+		
+		unifi_rosdorf_01 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>Unifi_Rosdorf_01</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
+			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
+			</TABLE>>
+			]
+			
+	
+		}
+	subgraph cluster_99999 {
+		label="Etage 2";
+		shape=ellipse
+		style=filled
+		color="gray"
+	
+
+		hope_rosdorf_03 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>hope-rosdorf-03</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
+			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD>Mac:  </TD><TD></TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
+			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
+			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
+			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2">IBSS/Client K1 </TD></TR>
+			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >IBSS/Mesh/Client K44</TD></TR>
+
+			</TABLE>>
+			]
+		
+		unifi_rosdorf_02 [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD>Unifi_Rosdorf_01</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
+			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
+			</TABLE>>
+			]
+			
+	
+		}
+
+
+		
+
+	}
+
+
+
+
+
+hope_rosdorf_01:LAN1 -> nano_loco_rosdorf_01:LAN1
+vdsl_kindergarten:LAN1 -> hope_rosdorf_01:WAN
+ 
+}
+
