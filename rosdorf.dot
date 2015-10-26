@@ -22,7 +22,7 @@ subgraph cluster_9 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD CELLSPACING="2">VDSL-Kindergarten</TD><TD ROWSPAN="2" BALIGN="LEFT">?<BR/>16MBit/s</TD></TR> 
-			<TR><TD><IMG SRC="fritzbox.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/fritzbox.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>DSL:</TD><TD>Telekom</TD></TR>
 			<TR><TD>LAN1:</TD><TD   BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
@@ -33,7 +33,7 @@ subgraph cluster_9 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>hope-rosdorf-01</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
-			<TR><TD><IMG SRC="1043.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/1043.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD>c4:6e:1f:97:71:80</TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN" >WAN        </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
@@ -55,7 +55,7 @@ subgraph cluster_9 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>Nano_Loco_Rosdorf_01 10.109.250.25</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="nano.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/nano.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
 			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
@@ -79,7 +79,7 @@ subgraph cluster_99 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/switch.jpg"/></TD></TR>
 			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
@@ -104,7 +104,7 @@ subgraph cluster_99 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>hope-rosdorf-01</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
-			<TR><TD><IMG SRC="1043.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/1043.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN" >WAN        </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
@@ -132,7 +132,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/switch.jpg"/></TD></TR>
 			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
@@ -152,7 +152,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>hope-rosdorf-05</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
-			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/3700.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
@@ -177,7 +177,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>hope-rosdorf-04</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
-			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/3700.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
@@ -194,7 +194,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>Unifi_Rosdorf_01</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/uap.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
 			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
@@ -214,7 +214,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>hope-rosdorf-03</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
-			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/3700.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
@@ -231,7 +231,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>Unifi_Rosdorf_01</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="https://flauschfunk.de/uap.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
 			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
