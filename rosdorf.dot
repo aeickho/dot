@@ -103,7 +103,7 @@ subgraph cluster_99 {
 		hope_rosdorf_02 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>hope-rosdorf-01</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
+			<TR><TD>hope-rosdorf-02</TD><TD ROWSPAN="2" BALIGN="LEFT">1043<BR/>fastd</TD></TR>
 			<TR><TD><IMG SRC="1043.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
 			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN" >WAN        </TD></TR>
