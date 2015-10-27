@@ -231,7 +231,7 @@ subgraph cluster_999 {
 			label=<
 			<TABLE BGCOLOR="white">
 			<TR><TD>Unifi_Rosdorf_01</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
-			<TR><TD><IMG SRC="xlink:href="flauschfunk.de/uap.jpg"/></TD></TR>
+			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
 			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2"  >Client K11 </TD></TR>
