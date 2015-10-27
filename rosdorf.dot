@@ -75,12 +75,12 @@ subgraph cluster_99 {
 		style=filled
 		color="gray"
 	
-		switch_1 [
+		switch_2 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD>switch-2</TD> <TD ROWSPAN="2" BALIGN="LEFT">VLAN 1 admin 192.168.2.0/24<br/>VLAN 2 VDSL	192.168.1.0/24<br/>VLAN 3 Mesh<br/>VLAN 4 Freifunk Netz<br/>VLAN 5 Johanitter</TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
-			<TR><TD>IP:</TD>192.168.2.2<TD></TD></TR>
+			<TR><TD>IP:</TD><TD>192.168.2.2</TD></TR>
 			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
 			<TR><TD>LANB:</TD><TD  PORT="LANB"  ALIGN="LEFT">LWL</TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: 1</TD></TR>
@@ -144,12 +144,12 @@ subgraph cluster_999 {
 		style=filled
 		color="gray"
 	
-		switch_2 [
+		switch_1 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT">VLAN 1 admin 192.168.2.0/24<br/>VLAN 2 VDSL	192.168.1.0/24<br/>VLAN 3 Mesh<br/>VLAN 4 Freifunk Netz<br/>VLAN 5 Johanitter</TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
-			<TR><TD>IP:</TD>192.168.2.1<TD></TD></TR>
+			<TR><TD>IP:</TD><TD>192.168.2.1</TD></TR>
 			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
 			<TR><TD>LANB:</TD><TD  PORT="LANB"  ALIGN="LEFT">LWL</TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: 2 </TD></TR>
@@ -189,7 +189,7 @@ subgraph cluster_999 {
 			<TR><TD>LAN1: </TD><TD BGCOLOR="yellow" PORT="LAN1"   >Mesh</TD></TR>
 			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
 			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
-			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client/Admin</TD></TR>
+			<TR><TD>LAN4: </TD><TD BGCOLOR="lightblue" PORT="LAN4"   >Client/Admin</TD></TR>
 			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2">Client K1 </TD></TR>
 			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >Mesh K44</TD></TR>
 
@@ -200,7 +200,7 @@ subgraph cluster_999 {
 			<TABLE BGCOLOR="white">
 			<TR><TD CELLSPACING="2">VDSL-Landkreis</TD><TD ROWSPAN="2" BALIGN="LEFT">?<BR/>50MBit/s</TD></TR> 
 			<TR><TD><IMG SRC="fritzbox.jpg"/></TD></TR>
-			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>IP:</TD><TD>192.168.1.1</TD></TR>
 			<TR><TD>DSL:</TD><TD>Telekom</TD></TR>
 			<TR><TD>LAN1:</TD><TD   BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
 			</TABLE>>
@@ -227,8 +227,8 @@ subgraph cluster_999 {
 			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
 			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
 			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client</TD></TR>
-			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2">IBSS/Client K1 </TD></TR>
-			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >IBSS/Mesh/Client K44</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2">Client K1 </TD></TR>
+			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >Mesh K44</TD></TR>
 
 			</TABLE>>
 			]
@@ -264,8 +264,8 @@ subgraph cluster_999 {
 			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
 			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
 			<TR><TD>LAN4: </TD><TD BGCOLOR="blue" PORT="LAN4"   >Client</TD></TR>
-			<TR><TD>2.4GHz</TD><TD BGCOLOR="lightblue" PORT="R2">IBSS/Client K1 </TD></TR>
-			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >IBSS/Mesh/Client K44</TD></TR>
+			<TR><TD>2.4GHz</TD><TD BGCOLOR="blue" PORT="R2">Client K1 </TD></TR>
+			<TR><TD>5 GHz </TD><TD BGCOLOR="yellow" PORT="R5"   >Mesh K44</TD></TR>
 
 			</TABLE>>
 			]
@@ -297,8 +297,18 @@ hope_rosdorf_01:LAN1 -> nano_loco_rosdorf_01:LAN1 [color="blue" dir=both;]
 vdsl_kindergarten:LAN1 -> hope_rosdorf_01:WAN [color="blue" dir=both;]
 hope_rosdorf_03:LAN1 -> unifi_rosdorf_02:LAN1  [color="blue" dir=both;]
 hope_rosdorf_04:LAN1 -> unifi_rosdorf_01:LAN1  [color="blue" dir=both;]
-switch_1:LANA -> switch_2:LANA  [color="orange" dir=both;]
-switch_2:LAN1 -> vdsl_landkreisn:LAN1
-switch_2:LAN2 -> hope_rosdorf_05:WAN
+switch_2:LANA -> switch_1:LANA  [color="orange" dir=both;]
+switch_1:LAN1 -> vdsl_landkreisn:LAN1 [color="red" dir=both;]
+
+switch_1:LAN2 -> hope_rosdorf_05:WAN [color="red" dir=both;]
+switch_2:LAN3 -> hope_rosdorf_02:WAN  [color="red" dir=both;] 
+switch_2:LAN2 -> hope_rosdorf_02:LAN1  [color="yellow" dir=both;]
+switch_1:LAN5 ->  hope_rosdorf_05:LAN2  [color="blue" dir=both;]
+
+switch_1:LAN23 -> hope_rosdorf_05:LAN4 [color="lightblue" dir=both;]
+
+switch_1:LAN3 ->  hope_rosdorf_05:LAN1 [color="yellow" dir=both;]
+
+hope_rosdorf_03:R5 -> hope_rosdorf_04:R5 [color="yellow" dir=both; style=dotted;]
 }
 
