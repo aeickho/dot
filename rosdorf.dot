@@ -5,7 +5,7 @@ digraph G {
 #overlap=prism0
  graph [overlap = false];
  node [shape=plaintext]
-
+href="https://flauschfunk.de"
 
 subgraph cluster_9 {
 	shape=ellipse
