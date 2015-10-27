@@ -81,6 +81,8 @@ subgraph cluster_99 {
 			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
 			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
+			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
+			<TR><TD>LANB:</TD><TD  PORT="LANB"  ALIGN="LEFT">LWL</TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: wedwd</TD></TR>
@@ -134,6 +136,8 @@ subgraph cluster_999 {
 			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
 			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
+			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
+			<TR><TD>LANB:</TD><TD  PORT="LANB"  ALIGN="LEFT">LWL</TD></TR>
 			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
 			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: wedwd</TD></TR>
@@ -164,6 +168,18 @@ subgraph cluster_999 {
 
 			</TABLE>>
 			]
+		vdsl_landkreisn [
+			label=<
+			<TABLE BGCOLOR="white">
+			<TR><TD CELLSPACING="2">VDSL-Landkreis</TD><TD ROWSPAN="2" BALIGN="LEFT">?<BR/>50MBit/s</TD></TR> 
+			<TR><TD><IMG SRC="fritzbox.jpg"/></TD></TR>
+			<TR><TD>Mac:</TD><TD></TD></TR>
+			<TR><TD>DSL:</TD><TD>Telekom</TD></TR>
+			<TR><TD>LAN1:</TD><TD   BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
+			</TABLE>>
+		]
+
+
 		}
 
 	subgraph cluster_9999 {
@@ -230,7 +246,7 @@ subgraph cluster_999 {
 		unifi_rosdorf_02 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>Unifi_Rosdorf_01 hase </TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD>Unifi_Rosdorf_02</TD><TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
 			<TR><TD><IMG SRC="uap.jpg"/></TD></TR>
 			<TR><TD>Mac:</TD><TD></TD></TR>
 			<TR><TD>LAN1:</TD><TD BGCOLOR="blue" PORT="LAN1">Client</TD></TR>
@@ -250,8 +266,12 @@ subgraph cluster_999 {
 
 
 
-hope_rosdorf_01:LAN1 -> nano_loco_rosdorf_01:LAN1
-vdsl_kindergarten:LAN1 -> hope_rosdorf_01:WAN
- 
+hope_rosdorf_01:LAN1 -> nano_loco_rosdorf_01:LAN1 [color="blue" dir=both;]
+vdsl_kindergarten:LAN1 -> hope_rosdorf_01:WAN [color="blue" dir=both;]
+hope_rosdorf_03:LAN1 -> unifi_rosdorf_02:LAN1  [color="blue" dir=both;]
+hope_rosdorf_04:LAN1 -> unifi_rosdorf_01:LAN1  [color="blue" dir=both;]
+switch_1:LANA -> switch_2:LANA  [color="orange" dir=both;]
+
+
 }
 
