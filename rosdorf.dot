@@ -133,7 +133,7 @@ subgraph cluster_999 {
 		switch_2 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD>switch-2</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
 			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
 			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
