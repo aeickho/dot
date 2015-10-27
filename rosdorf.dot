@@ -210,7 +210,7 @@ subgraph cluster_999 {
 		}
 
 	subgraph cluster_9999 {
-		label="Etage 1";
+		label="Etage 2";
 		shape=ellipse
 		style=filled
 		color="gray"
@@ -247,7 +247,7 @@ subgraph cluster_999 {
 	
 		}
 	subgraph cluster_99999 {
-		label="Etage 2";
+		label="Etage 1";
 		shape=ellipse
 		style=filled
 		color="gray"
@@ -259,7 +259,7 @@ subgraph cluster_999 {
 			<TR><TD>hope-rosdorf-03</TD><TD ROWSPAN="2" BALIGN="LEFT">3700<BR/>fastd</TD></TR>
 			<TR><TD><IMG SRC="3700.jpg"/></TD></TR>
 			<TR><TD>Mac:  </TD><TD></TD></TR>
-			<TR><TD>WAN:  </TD><TD BGCOLOR="red"    PORT="WAN"  >WAN        </TD></TR>
+			<TR><TD>WAN:  </TD><TD BGCOLOR="yellow"    PORT="WAN"  >MESH  </TD></TR>
 			<TR><TD>LAN1: </TD><TD BGCOLOR="blue" PORT="LAN1"   >Client</TD></TR>
 			<TR><TD>LAN2: </TD><TD BGCOLOR="blue" PORT="LAN2"   >Client</TD></TR>
 			<TR><TD>LAN3: </TD><TD BGCOLOR="blue" PORT="LAN3"   >Client</TD></TR>
@@ -308,6 +308,8 @@ switch_1:LAN5 ->  hope_rosdorf_05:LAN2  [color="blue" dir=both;]
 switch_1:LAN23 -> hope_rosdorf_05:LAN4 [color="lightblue" dir=both;]
 
 switch_1:LAN3 ->  hope_rosdorf_05:LAN1 [color="yellow" dir=both;]
+hope_rosdorf_03:WAN -> switch_1:LAN4 [color="yellow" dir=both;]
+
 
 hope_rosdorf_03:R5 -> hope_rosdorf_04:R5 [color="yellow" dir=both; style=dotted;]
 }
