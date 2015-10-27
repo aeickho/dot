@@ -147,22 +147,35 @@ subgraph cluster_999 {
 		switch_2 [
 			label=<
 			<TABLE BGCOLOR="white">
-			<TR><TD>switch-2</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
+			<TR><TD>switch-1</TD> <TD ROWSPAN="2" BALIGN="LEFT"></TD></TR>
 			<TR><TD><IMG SRC="switch.jpg"/></TD></TR>
-			<TR><TD>IP:</TD>192.168.x.x<TD></TD></TR>
+			<TR><TD>IP:</TD>192.168.2.1<TD></TD></TR>
 			<TR><TD>LANA:</TD><TD  PORT="LANA"  ALIGN="LEFT">LWL tagged</TD></TR>
 			<TR><TD>LANB:</TD><TD  PORT="LANB"  ALIGN="LEFT">LWL</TD></TR>
-			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: asd</TD></TR>
-			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: asd</TD></TR>
-			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: wedwd</TD></TR>
-			<TR><TD>LAN4:</TD><TD  PORT="LAN4"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN5:</TD><TD  PORT="LAN5"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN6:</TD><TD  PORT="LAN6"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN7:</TD><TD  PORT="LAN7"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN8:</TD><TD  PORT="LAN8"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN9:</TD><TD  PORT="LAN9"  ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN10:</TD><TD PORT="LAN10" ALIGN="LEFT">VLAN: dwede</TD></TR>
-			<TR><TD>LAN11:</TD><TD PORT="LAN11" ALIGN="LEFT">VLAN: dwede</TD></TR>
+			<TR><TD>LAN1:</TD><TD  PORT="LAN1"  ALIGN="LEFT">VLAN: 2 </TD></TR>
+			<TR><TD>LAN2:</TD><TD  PORT="LAN2"  ALIGN="LEFT">VLAN: 2 </TD></TR>
+			<TR><TD>LAN3:</TD><TD  PORT="LAN3"  ALIGN="LEFT">VLAN: 3 </TD></TR>
+			<TR><TD>LAN4:</TD><TD  PORT="LAN4"  ALIGN="LEFT">VLAN: 3 </TD></TR>
+			<TR><TD>LAN5:</TD><TD  PORT="LAN5"  ALIGN="LEFT">VLAN: 4 </TD></TR>
+			<TR><TD>LAN6:</TD><TD  PORT="LAN6"  ALIGN="LEFT">VLAN: 4 </TD></TR>
+			<TR><TD>LAN7:</TD><TD  PORT="LAN7"  ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN8:</TD><TD  PORT="LAN8"  ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN9:</TD><TD  PORT="LAN9"  ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN10:</TD><TD PORT="LAN10" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN11:</TD><TD PORT="LAN11" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN12:</TD><TD PORT="LAN12" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN13:</TD><TD PORT="LAN13" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN14:</TD><TD PORT="LAN14" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN15:</TD><TD PORT="LAN15" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN16:</TD><TD PORT="LAN16" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN17:</TD><TD PORT="LAN17" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN18:</TD><TD PORT="LAN18" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN19:</TD><TD PORT="LAN19" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN20:</TD><TD PORT="LAN20" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN21:</TD><TD PORT="LAN21" ALIGN="LEFT">VLAN: 4 </TD></TR>
+			<TR><TD>LAN22:</TD><TD PORT="LAN22" ALIGN="LEFT">VLAN: 4 </TD></TR>
+			<TR><TD>LAN23:</TD><TD PORT="LAN23" ALIGN="LEFT">VLAN: 1</TD></TR>
+			<TR><TD>LAN24:</TD><TD PORT="LAN24" ALIGN="LEFT">VLAN: 5 </TD></TR>
 			</TABLE>>
 		]
 
@@ -285,7 +298,7 @@ vdsl_kindergarten:LAN1 -> hope_rosdorf_01:WAN [color="blue" dir=both;]
 hope_rosdorf_03:LAN1 -> unifi_rosdorf_02:LAN1  [color="blue" dir=both;]
 hope_rosdorf_04:LAN1 -> unifi_rosdorf_01:LAN1  [color="blue" dir=both;]
 switch_1:LANA -> switch_2:LANA  [color="orange" dir=both;]
-
-
+switch_2:LAN1 -> vdsl_landkreisn:LAN1
+switch_2:LAN2 -> hope_rosdorf_05:WAN
 }
 
